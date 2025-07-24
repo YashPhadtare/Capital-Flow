@@ -31,7 +31,7 @@ Capital Flow is a simple yet powerful expense management system that helps users
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/capital-flow.git
+   git clone https://github.com/YashPhadtare/capital-flow.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -43,21 +43,21 @@ Capital Flow is a simple yet powerful expense management system that helps users
 
 ```
 capital-flow/
-├── index.html              # Main application entry point
-├── login.html              # Login page
-├── signup.html             # User registration page
-├── add-expense.html        # Add new expense page
-├── view-expense.html       # View and manage expenses page
+├── index.html             
+├── login.html             
+├── signup.html            
+├── add-expense.html       
+├── view-expense.html      
 ├── scripts/
-│   ├── login.js            # Login functionality
-│   ├── signup.js           # User registration
-│   ├── add-expense.js      # Add expense functionality
-│   ├── view-expense.js     # View and manage expenses
-│   └── main.js             # Shared functionality
+│   ├── login.js            
+│   ├── signup.js           
+│   ├── add-expense.js     
+│   ├── view-expense.js   
+│   └── main.js            
 ├── styles/
-│   ├── modern.css          # Main stylesheet
-│   └── style.css           # Additional styles
-└── users.json              # Sample user data storage
+│   ├── modern.css          
+│   └── style.css           
+└── users.json              
 ```
 
 ## Usage
