@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Expenses - Capital Flow</title>
+    <link rel="stylesheet" href="styles/modern.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">Capital Flow</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="add-expense.html">Add Expense</a></li>
+                    <li><a href="view-expense.html" class="active">View Expenses</a></li>
+                    <li><a href="login.html" onclick="logout()">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="expense-header">
+            <h1 class="page-title">Your Expenses</h1>
+            <div class="expense-controls">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search" class="search-input" placeholder="Search expenses...">
+                </div>
+                <button class="btn btn-primary export-btn">
+                    <i class="fas fa-file-export"></i> Export CSV
+                </button>
+            </div>
+        </div>
+
+        <div class="card expense-table-container">
+            <div class="table-responsive">
+                <table id="expense-table">
+                    <thead>
+                        <tr>
+                            <th>Expense</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Expenses will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-summary">
+                <div class="total-expenses">
+                    <span>Total Expenses:</span>
+                    <span id="total-amount">₹0.00</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 Capital Flow. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/view-expense.js"></script>
+    <script>
+        function logout() {
+            localStorage.removeItem('loggedInUser');
+        }
+
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function () {
+            document.querySelector('.main-nav').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
