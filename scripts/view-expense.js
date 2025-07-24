@@ -58,7 +58,7 @@ function renderExpenses(expenses) {
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>${exp.expense}</td>
-            <td><span class="category-tag" style="background-color: ${getCategoryColor(exp.category)}">${exp.category}</span></td>
+            <td>${exp.category}</td>
             <td>₹${exp.amount.toFixed(2)}</td>
             <td>${formatDate(exp.date)}</td>
             <td>
@@ -83,26 +83,6 @@ function formatDate(dateString) {
         month: 'short',
         year: 'numeric'
     });
-}
-
-function getCategoryColor(category) {
-    // Assign different colors based on category
-    const colors = {
-        'Food & Dining': '#f59e0b',
-        'Transportation': '#3b82f6',
-        'Housing': '#10b981',
-        'Utilities': '#6366f1',
-        'Healthcare': '#ef4444',
-        'Entertainment': '#8b5cf6',
-        'Shopping': '#ec4899',
-        'Education': '#14b8a6',
-        'Personal Care': '#f97316',
-        'Travel': '#06b6d4',
-        'Gifts & Donations': '#a855f7',
-        'Investments': '#22c55e',
-        'Other': '#64748b'
-    };
-    return colors[category] || '#94a3b8';
 }
 
 function exportExpenses() {
