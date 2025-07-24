@@ -1,7 +1,6 @@
 # Expense Management System - Capital Flow
 
-![Project Screenshot](
-<img width="1917" height="907" alt="screenshot" src="https://github.com/user-attachments/assets/b0d531c0-e036-4ef5-89ea-5da8ee195812" />)
+![Project Screenshot](<img width="1917" height="907" alt="screenshot" src="https://github.com/user-attachments/assets/b0d531c0-e036-4ef5-89ea-5da8ee195812" />)
 
 Capital Flow is a simple yet powerful expense management system that helps users track their daily expenses, categorize spending, and generate reports. Built with HTML, CSS, and JavaScript, this web application stores data locally in the browser.
 
