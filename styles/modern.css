@@ -901,3 +901,56 @@ select.form-control {
 .modal-content p {
     color: var(--text-light);
 }
+
+/* Icon Spacing */
+.icon-spacing {
+    margin-right: 8px;
+    /* Consistent 8px spacing between icon and text */
+    width: 16px;
+    /* Fixed width for perfect alignment */
+    text-align: center;
+    /* Center the icon in its space */
+}
+
+/* Header Icon Spacing */
+.form-header h1 i {
+    margin-right: 10px;
+    /* Slightly larger spacing for header icon */
+}
+
+/* Button Icon Spacing */
+.btn i {
+    margin-right: 8px;
+}
+
+/* Form Label Icon Spacing */
+.form-group label i {
+    margin-right: 8px;
+    width: 16px;
+    text-align: center;
+}
+
+/* Button Icon Spacing */
+.btn-icon {
+    margin-right: 8px;
+}
+
+/* Select Dropdown Styling */
+.select-wrapper {
+    position: relative;
+}
+
+.select-arrow {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-light);
+    pointer-events: none;
+}
+
+/* Custom select options with icons */
+select option {
+    padding: 8px 12px;
+}
+
